@@ -27,7 +27,7 @@ namespace LinqToTwitter
     public static class Evaluator
     {
         /// <summary>
-        /// Performs evaluation & replacement of independent sub-trees
+        /// Performs evaluation &amp; replacement of independent sub-trees
         /// </summary>
         /// <param name="expression">The root of the expression tree.</param>
         /// <param name="fnCanBeEvaluated">A function that decides whether a given expression node can be part of the local function.</param>
@@ -37,12 +37,12 @@ namespace LinqToTwitter
             return new SubtreeEvaluator(new Nominator(fnCanBeEvaluated).Nominate(expression)).Eval(expression);
         }
 
-        /// <summary>
-        /// Performs evaluation & replacement of independent sub-trees
-        /// </summary>
-        /// <param name="expression">The root of the expression tree.</param>
-        /// <returns>A new tree with sub-trees evaluated and replaced.</returns>
-        public static Expression PartialEval(Expression expression)
+		/// <summary>
+		/// Performs evaluation &amp; replacement of independent sub-trees
+		/// </summary>
+		/// <param name="expression">The root of the expression tree.</param>
+		/// <returns>A new tree with sub-trees evaluated and replaced.</returns>
+		public static Expression PartialEval(Expression expression)
         {
             return PartialEval(expression, Evaluator.CanBeEvaluatedLocally);
         }
@@ -52,10 +52,10 @@ namespace LinqToTwitter
             return expression.NodeType != ExpressionType.Parameter;
         }
 
-        /// <summary>
-        /// Evaluates & replaces sub-trees when first candidate is reached (top-down)
-        /// </summary>
-        class SubtreeEvaluator : ExpressionVisitor
+		/// <summary>
+		/// Evaluates &amp; replaces sub-trees when first candidate is reached (top-down)
+		/// </summary>
+		class SubtreeEvaluator : ExpressionVisitor
         {
             readonly HashSet<Expression> candidates;
 

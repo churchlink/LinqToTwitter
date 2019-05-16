@@ -254,17 +254,17 @@ namespace LinqToTwitter
             return reqProc.ProcessActionResult(RawResult, UserAction.SingleUser);
         }
 
-        /// <summary>
-        /// Updates user's account settings
-        /// </summary>
-        /// <param name="trendLocationWeoid">WEOID for Trend Location the user is interested in.</param>
-        /// <param name="sleepTimeEnabled">Turn on time periods when notifications won't be sent.</param>
-        /// <param name="startSleepTime">Don't send notifications at this time or later this time. (hour from 00 to 23)</param>
-        /// <param name="endSleepTime">Start sending notifications again after this time. (hour from 00 to 23)</param>
-        /// <param name="timeZone">User's time zone.</param>
-        /// <param name="lang">User's language.</param>
-        /// <returns>Account information with Settings property populated.</returns>
-        public async Task<Account> UpdateAccountSettingsAsync(int? trendLocationWoeid, bool? sleepTimeEnabled, int? startSleepTime, int? endSleepTime, string timeZone, string lang, CancellationToken cancelToken = default(CancellationToken))
+		/// <summary>
+		/// Updates user's account settings
+		/// </summary>
+		/// <param name="trendLocationWoeid">WEOID for Trend Location the user is interested in.</param>
+		/// <param name="sleepTimeEnabled">Turn on time periods when notifications won't be sent.</param>
+		/// <param name="startSleepTime">Don't send notifications at this time or later this time. (hour from 00 to 23)</param>
+		/// <param name="endSleepTime">Start sending notifications again after this time. (hour from 00 to 23)</param>
+		/// <param name="timeZone">User's time zone.</param>
+		/// <param name="lang">User's language.</param>
+		/// <returns>Account information with Settings property populated.</returns>
+		public async Task<Account> UpdateAccountSettingsAsync(int? trendLocationWoeid, bool? sleepTimeEnabled, int? startSleepTime, int? endSleepTime, string timeZone, string lang, CancellationToken cancelToken = default(CancellationToken))
         {
             var accountUrl = BaseUrl + "account/settings.json";
 
