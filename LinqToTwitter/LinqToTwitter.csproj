@@ -2,9 +2,9 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0;net471;</TargetFrameworks>
-		<Version>5.100.100</Version>
-		<AssemblyVersion>5.100.100</AssemblyVersion>
-		<FileVersion>5.100.100</FileVersion>
+		<Version>5.101.2</Version>
+		<AssemblyVersion>5.101.2</AssemblyVersion>
+		<FileVersion>5.101.2</FileVersion>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Description>LinqToTwitter compiled for netstandard and net471, built from modern (netstandard) and much simplified project</Description>
 		<NoWarn>1591;1573;1572;1587;1701;1702;1705;0168;1998;</NoWarn>
