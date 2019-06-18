@@ -1,13 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;net471;</TargetFrameworks>
-		<Version>5.101.2</Version>
+    <!--<TargetFrameworks>netstandard2.0;net471;</TargetFrameworks>-->
+    <TargetFramework>netstandard2.0</TargetFramework>
+		<PackageId>LinqToTwitter.Core</PackageId>
+		<Product>LinqToTwitter.Core</Product>
+    <Version>5.101.2</Version>
 		<AssemblyVersion>5.101.2</AssemblyVersion>
 		<FileVersion>5.101.2</FileVersion>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Description>LinqToTwitter compiled for netstandard and net471, built from modern (netstandard) and much simplified project</Description>
+		<Description>LinqToTwitter compiled for netstandard and built from modern (netstandard) and much simplified project</Description>
 		<NoWarn>1591;1573;1572;1587;1701;1702;1705;0168;1998;</NoWarn>
+		<Authors>LinqToTwitter</Authors>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
